@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(243, 243, 243);
+    color: #333;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+}
+
+.bar {
+    padding: 0;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.inputs {
+    width: 100%;
+    max-width: 100%;
+    color: #000;
+    padding: 10px 11px;
+    height: 44px;
+    border: solid 1px #b3b3b3;
+    border-radius: 2px;
+}
+
+.input-mail {
+    padding-bottom: 16px;
+    margin-bottom: 6px;
+}
+
+.input-pwd {
+    padding-bottom: 43px;
+    margin-bottom: 6px;
+}
+
+.remind {
+    margin: 30px 0 10px;
+}
+
+.remind a {
+    color: #337ab7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.remind a:hover {
+    text-decoration: underline;
+}
+
+.button-login {
+    background: #e50914;
+    font-size: 18px;
+    color: #fff;
+    padding: 16px;
+    margin: 9px 9px 9px 0;
+    border: none;
+    min-width: 98px;
+    min-height: 37px;
+    margin-right: .5em;
+    line-height: 1em;
+    display: inline-block;
+}
+
+.button-login:hover {
+    color: #fff;
+}
+
+.checkbox label {
+    padding-left: 40px;
+    font-size: 14px;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    opacity: 0;
+}
+
+input[type=checkbox]+label::before {
+    width: 25px;
+    height: 25px;
+    content: "";
+    position: absolute;
+    display: block;
+    top: -2px;
+    left: 1px;
+    padding: 0;
+    border: 1px solid #b3b3b3;
+    background-color: #fff;
+}
+
+input[type=checkbox]:checked+label::after {
+    color: #0080ff;
+    content: "✔";
+    top: -8px;
+    left: 3px;
+    font-size: 28px;
+    position: absolute;
+}
+
+.line hr {
+    height: 1px;
+    border: none;
+}
+
+.btn-fb {
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    border: none;
+    padding: 0;
+    height: 46px;
+}
+
+.img-fb {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+    line-height: 1;
+}
+
+.fb-login {
+    color: #0080ff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: -5px;
+}
+
+.bottom {
+    height: 0;
+    width: 100%;
+}
+
+.nf-footer {
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 90%;
+}
+
+.questions {
+    padding: 0;
+    margin: 0 0 30px;
+    font-size: 16px;
+}
+
+.q-contact,
+.footer-link,
+.form-control {
+    color: #777;
+}
+
+.footer-link:hover {
+    color: #777;
+}
+
+.footer-links {
+    list-style-type: none;
+    font-size: 13px;
+}
+
+.footer-links ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.footer-link-a {
+    margin-bottom: 16px;
+    padding-right: 12px;
+    width: 33%;
+}
+
+.language {
+    margin-top: 20px;
+    width: 165px;
+}
+
+.form-control {
+    font-size: 14px;
+    padding: 12px 12px 12px 50px;
+    height: 46px;
+    line-height: 1.7;
+}
+
+.language::before {
+    content: url(../images/globe.png);
+    position: relative;
+    top: 40px;
+    left: 13px;
+}
+
+@media screen and (max-width: 500px) {
+    .footer-link-a {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .footer-link-a {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo-svg {
+        height: 32px;
+        width: 75px;
+        padding-top: 12px;
+        fill: #e50914;
+        line-height: 45px;
+        vertical-align: middle;
+    }
+    .logo {
+        height: 45px;
+        background-color: #fafafa;
+        border-bottom: solid 1px #dcdde0;
+        padding: 7px 0 5px 20px;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .logo-svg {
+        height: 45px;
+        width: 167px;
+        vertical-align: middle;
+        fill: #e50914;
+        line-height: 90px;
+    }
+    .logo {
+        height: 90px;
+        background-color: #fafafa;
+        border-bottom: solid 1px #dcdde0;
+        padding: 23px 21px 0;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .login-form {
+        color: #333;
+        margin: 0 auto;
+        padding: 0 5%;
+    }
+    .log-info {
+        margin-bottom: 10px;
+        padding-top: 20px;
+    }
+    .log-info h1 {
+        font-size: 2em;
+    }
+    .description {
+        font-size: 14px;
+    }
+    .line hr {
+        background-color: rgb(204, 204, 204);
+        margin: 8px 0;
+    }
+    .bottom {
+        border-top: 1px solid #e5e5e5;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    body {
+        background: url(https://assets.nflxext.com/ffe/siteui/acquisition/login/login-the-crown_2-1500x1000.jpg);
+        background-size: cover;
+    }
+    .logo {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, 0) 100%);
+        border-bottom: none;
+        padding-left: 24px;
+    }
+    .login-form {
+        width: 460px;
+        background-color: #f3f3f3;
+        padding: 40px;
+        margin: 0 auto;
+        display: block;
+    }
+    .log-info h1 {
+        font-size: 2em;
+        margin: 0 0 20px 0;
+        padding: 0;
+    }
+    .description {
+        font-size: 16px;
+    }
+    .line hr {
+        background: #ccc;
+        margin: 0;
+    }
+    .bottom {
+        border-top: 1px solid #000;
+    }
+    footer {
+        background-color: #f3f3f3;
+        margin-top: 20px;
+    }
+}
